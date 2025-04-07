@@ -1,0 +1,10 @@
+.footer {
+    background-color: $light-gray;
+    padding: $spacing-large 0;
+    margin-top: $spacing-large * 2;
+
+    .footer-content {
+        text-align: center;
+        color: $dark-gray;
+    }
+}
