@@ -1,0 +1,18 @@
+// Setup
+@import "setups/variables";
+
+// Basics
+@import "basics/base";
+
+// Pages
+@import "pages/Home";
+@import "pages/ProductDetails";
+
+// Components
+@import "components/ProductList";
+@import "components/ProductCard";
+@import "components/ReviewForm";
+
+// Components/Layout
+@import "components/layout/Header";
+@import "components/layout/Footer";
