@@ -6,7 +6,7 @@ export default function Footer() {
         <footer className="footer">
             <div className="container">
                 <div className="footer-content">
-                    <p>&copy; {currentYear} Product Catalog. All rights reserved.</p>
+                    <p>&copy; {currentYear} Product Catalog by Tomer Vardi. All rights reserved.</p>
                 </div>
             </div>
         </footer>
