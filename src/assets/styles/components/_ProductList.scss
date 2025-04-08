@@ -1,0 +1,35 @@
+// src/assets/styles/components/_ProductList.scss
+.product-list {
+    padding: $spacing-large;
+    margin: 0 auto;
+    max-width: 1200px;
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: $spacing-large;
+
+        @media (min-width: 550px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (min-width: $desktop) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (min-width: $widescreen) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+    .loading,
+    .error {
+        text-align: center;
+        padding: $spacing-large;
+        font-size: 1.2rem;
+    }
+
+    .error {
+        color: red;
+    }
+}

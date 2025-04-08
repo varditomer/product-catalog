@@ -1,0 +1,185 @@
+// src/assets/styles/pages/_ProductDetails.scss
+.product-details-page {
+    padding: $spacing-large;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .back-button {
+        display: inline-block;
+        padding: $spacing-small $spacing-medium;
+        margin-bottom: $spacing-large;
+        background-color: transparent;
+        color: $primary-color;
+        border: 1px solid $primary-color;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: $spacing-large * 2;
+
+        @media (min-width: $tablet) {
+            flex-direction: row;
+            gap: $spacing-large * 2;
+        }
+
+        .product-image-container {
+            flex: 1;
+            margin-bottom: $spacing-large;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                border-radius: 8px;
+            }
+
+            @media (min-width: $tablet) {
+                margin-bottom: 0;
+            }
+        }
+
+        .product-info-container {
+            flex: 1;
+
+            .product-name {
+                font-size: 2rem;
+                margin-bottom: $spacing-small;
+                text-align: center;
+
+                @media (min-width: $tablet) {
+                    text-align: left;
+                }
+            }
+
+            .product-price {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: $primary-color;
+                margin-bottom: $spacing-small;
+                text-align: center;
+
+                @media (min-width: $tablet) {
+                    text-align: left;
+                }
+            }
+
+            .product-category {
+                color: $dark-gray;
+                margin-bottom: $spacing-medium;
+                text-align: center;
+
+                @media (min-width: $tablet) {
+                    text-align: left;
+                }
+            }
+
+            .product-description {
+                margin-top: $spacing-large;
+
+                h2 {
+                    font-size: 1.3rem;
+                    margin-bottom: $spacing-small;
+                }
+
+                p {
+                    line-height: 1.6;
+                }
+            }
+        }
+    }
+
+    .reviews-section {
+        border-top: 1px solid $light-gray;
+        padding-top: $spacing-large;
+
+        .reviews-header {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: $spacing-large;
+
+            @media (min-width: $tablet) {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+                margin-bottom: $spacing-small;
+
+                @media (min-width: $tablet) {
+                    margin-bottom: 0;
+                }
+            }
+
+            .reviews-summary {
+                display: flex;
+                align-items: center;
+                gap: $spacing-small;
+
+                .avg-rating {
+                    color: #ffd700; // Brighter gold for stars
+                    font-weight: bold;
+                    font-size: 1.2rem;
+                }
+
+                .review-count {
+                    color: $dark-gray;
+                    font-size: 0.9rem;
+                }
+            }
+        }
+
+        .reviews-list {
+            margin-bottom: $spacing-large * 2;
+
+            .review-item {
+                background-color: mix(white, $light-gray, 3%);
+                padding: $spacing-medium;
+                border-radius: 6px;
+                margin-bottom: $spacing-medium;
+
+                .review-header {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: $spacing-small;
+
+                    .reviewer-name {
+                        font-weight: bold;
+                    }
+
+                    .review-rating {
+                        color: #ffd700; // Brighter gold for stars
+                    }
+                }
+
+                .review-comment {
+                    margin-bottom: $spacing-small;
+                    line-height: 1.5;
+                }
+
+                .review-date {
+                    font-size: 0.85rem;
+                    color: $dark-gray;
+                    text-align: right;
+                }
+            }
+        }
+
+        .add-review {
+            h3 {
+                font-size: 1.3rem;
+                margin-bottom: $spacing-medium;
+            }
+        }
+    }
+}
