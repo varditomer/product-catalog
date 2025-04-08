@@ -20,6 +20,20 @@ A full-stack Next.js application featuring product browsing and review functiona
 - **Database:** MongoDB
 - **State Management:** React Context API
 
+## Live Demo
+
+You can access the live version of this application at: [Product Catalog App](https://product-catalog-snowy.vercel.app/)
+
+Feel free to browse the products and leave reviews without any installation required. The application is fully functional and ready to use.
+
+### Quick Start with Live Demo
+If you just want to explore the application without setting up locally:
+
+1. Visit the [Product Catalog](https://product-catalog-alpha.vercel.app/)
+2. Browse products on the homepage
+3. Click on any product to view details and reviews
+4. Add your own review using the form at the bottom of any product page
+
 ## Project Structure
 ```bash
 ├── public/                      # Static assets and images
