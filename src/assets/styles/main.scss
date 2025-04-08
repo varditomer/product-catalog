@@ -5,13 +5,14 @@
 @import "basics/base";
 
 // Pages
-@import "pages/Home";
 @import "pages/ProductDetails";
 
 // Components
 @import "components/ProductList";
 @import "components/ProductCard";
 @import "components/ReviewForm";
+@import "components/HeroSection";
+@import "components/Loader";
 
 // Components/Layout
 @import "components/layout/Header";
